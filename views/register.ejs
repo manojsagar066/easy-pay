@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<% if(x==0) {  %>
+    <script type="text/javascript">
+        alert("Username exists");
+    </script>
+     <% } %>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Register</h1>
+
+<form action="/register" method="POST">
+    <div class="form-group">
+        <label for="exampleInputEmail1">User name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" placeholder="username">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="password">
+        <small id="emailHelp" class="form-text text-muted">Do not share it with others</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+<li><a href="/login">Already registered, then sign in</a></li>
+<li><a href="/home">go to home page</a></li>
+<li><a href="/">go to starting page</a></li>
+</div>
+</div>
+
+
+
+

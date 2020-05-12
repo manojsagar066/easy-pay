@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<% if(x==0) {  %>
+    <script type="text/javascript">
+        alert("Successfully Registered");
+    </script>
+<% } %>
+
+<style type="text/css">
+body{
+  background-color:	#F8F8F8;
+  font-family: monospace;
+}
+
+ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 7px;
+            overflow: hidden;
+            background-color: #E83350;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            box-shadow: -4px -4px 8px #ffffff80, 4px 4px 8px  #00000060; 
+          
+        }
+
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #3498DB;
+        }
+
+        #logo{
+            float: right;
+            margin-right: 20px;
+        }
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #EAF0F1;
+  box-shadow: -4px -4px 8px #ffffff80, 4px 4px 8px  #00000060;
+  max-width: 300px;
+  height: 450px;
+  margin: 50px;
+  border-radius: 15px;
+  text-align: center;
+  
+}
+.card img{
+  width: 300px;
+  height: 300px;
+}
+h1{
+  color: #E83350;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+.btn1{
+  height: 50px;
+  width: 70px;
+  background-color:  #E83350;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.btn1:hover{
+  background-color: #3498DB;
+}
+</style>
+
+<ul>
+  <li><a style="float: left;" href="/logout">Logout</a></li>
+  <li> <img id="logo" src="/logo.png" width="80px" height="50px"></li>
+</ul><br>
+
+<div class="container">
+<div class="card">
+  <img src="/student.jpg" alt="student" style="width:100%">
+  <h1>Register New Student</h1>
+  <a class="btn1" href="/newstudent">Click me</a>
+</div>
+
+<div class="card">
+  <img src="/transaction.jpg" alt="transaction" style="width:100%">
+  <h1>Make transaction</h1>
+  <a class="btn1" href="/newtransaction">Click me</a>
+</div>
+
+<div class="card">
+  <img src="/recharge.png" alt="recharge" style="width:100%">
+  <h1>Recharge Balance</h1>
+  <a class="btn1" href="/recharge">Click me</a>
+</div>
+
+<div class="card">
+  <img src="/item.jpg" alt="newitem" style="width:100%">
+  <h1>New Item</h1>
+  <a class="btn1" href="/newitem">Click me</a>
+</div>
+
+<div class="card">
+  <img src="/update_stud.png" alt="update" style="width:100%">
+  <h1>Update Student</h1>
+  <a class="btn1" href="/update_student_data">Click me</a>
+</div>
+
+<div class="card">
+  <img src="/update_item.jpg" alt="update" style="width:100%">
+  <h1>Update Item</h1>
+  <a class="btn1" href="/update_item_data">Click me</a>
+</div>
+
+</div>
+

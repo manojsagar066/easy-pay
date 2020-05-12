@@ -1,0 +1,228 @@
+
+<% if(x==1) {  %>
+    <script type="text/javascript">
+        alert("Logged you out");
+    </script>
+     <% } %>
+
+     <style>
+        body {
+            font-size: 24px; 
+            font-family: monospace; 
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 7px;
+            overflow: hidden;
+            background-color: #2475B0;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            box-shadow: -4px -4px 8px #ffffff80, 4px 4px 8px  #00000060;
+        }
+
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #E83350;
+        }
+
+        #logo{
+            float: right;
+            margin-right: 20px;
+        }
+
+        .cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: -4px -4px 8px #ffffff80, 4px 4px 8px  #00000060
+    cursor  pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: #2B2B52;
+  }
+  
+
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  .adva{
+      color: white;
+      font-family: monospace;
+      font-size: 20px;
+      
+  }
+  .back-col{
+    background-color: 2475B0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    box-shadow: -8px -8px 16px #ffffff80, 8px 8px 16px  #00000060;
+  }
+
+  .footer{
+      margin-right: 5px;
+      margin-left: 5px;
+      background-color:  #2475B0;
+      box-shadow: -8px -8px 16px #ffffff80, 8px 8px 16px  #00000060;;
+      font-family: monospace;
+      height: 200px;
+      border-radius: 10px;
+  }
+  
+.about{
+    color: #ffffff;
+    font-family: monospace;
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.contact{
+    float:right;
+    font-family: monospace;
+    color: #ffffff;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.head2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: monospace;
+}
+</style>
+<ul>
+    <li><a style="float: left;" href="/">HOME</a></li>
+    <li><a style="float: left;" href="/contact">Contact</a></li>
+    <li><a style="float: left;" href="/studentservice">Student services</a></li>
+    <li> <img id="logo" src="logo.png" width="80px" height="50px"></li>
+</ul>
+
+
+<div class="cards-list">
+
+    <div class="card 1">
+      <div class="card_image"> 
+        <img id="canteen" src="/canteen.jpg" /> </div>
+          <div class="card_title title-white">
+            <p>Canteen</p>
+          </div>
+    </div>
+    
+    <div class="card 2">
+      <div class="card_image">
+        <img id="library" src="library.jfif" />
+      </div>
+      <div class="card_title title-white">
+        <p>Library</p>
+      </div>
+    </div>
+    
+    <div class="card 3">
+      <div class="card_image">
+        <img id="conveno" src="conveno.jpg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Conveno</p>
+      </div>
+    </div>
+  </div>
+<br><br>
+<div class="back-col">
+  <h2 class="head1"><u>Advantages:</u></h2>
+  <div class="adva">
+    <p>1) Compared to chip-and-signature credit cards, contactless RFID cards are faster, more convenient, and more secure. <br><br>
+       2) They have the same protection as chip-and-PIN payments.<br><br> 
+       3) When specifically tied to a smart phone, cardholders can use features such as payment history, virtual card provisioning, remote deactivation, and user-configured pin-protection.<br><br> 
+       4) In addition, its tap-to-pay method allows for quick and convenient transactions, which is especially useful in transit venues.
+      </p>
+  </div>
+</div><br><br>
+
+<div class="footer">
+   <div class="about">
+        <h2><u>About</u></h2>
+        <p>payment <br>gatewy</p>
+   </div>
+
+   <div class="contact">
+     <h2><u>Contact</u></h2>
+     <p>smartpay624@gmail.com</p>
+   </div>
+    <h2 class="head2">&copy2020</h2>
+</div>
+
+<script>
+    document.getElementById("canteen").addEventListener("click",function(){
+        window.location.replace("http://localhost:9750/login")
+    });
+
+    document.getElementById("conveno").addEventListener("click",function(){
+        window.location.replace("http://localhost:9750/login")
+    });
+
+    document.getElementById("library").addEventListener("click",function(){
+        window.location.replace("http://localhost:9750/login")
+    });
+
+ </script>

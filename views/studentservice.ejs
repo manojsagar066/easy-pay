@@ -1,0 +1,80 @@
+<style>
+    body{
+        font-family: monospace;
+        background-color: 	#F8F8F8;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+        background-color: 	#F0F0F0;
+        box-shadow:  -8px -8px 16px #ffffff80, 8px 8px 16px  #00000060;
+        width: 400px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    .form1{
+        align-items: center;
+        padding-left: 110px;
+        padding-top: 110px;
+    }
+    .btn{
+        text-decoration: none;
+        padding: 5px;
+        width: 75px;
+        height: 35px;
+        font-size: 16px;
+        border-radius: 7px;
+        font-weight: bold;
+        background-color: #E83350;
+        color: white;
+        box-shadow:  -2px -2px 4px #ffffff80, 2px 2px 4px  #00000060;
+    }
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+input{
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+h1{
+    color: #E83350;
+    position: fixed;
+    padding-left: 600px;
+    font-size: 40px;
+}
+.home{
+        text-decoration: none;
+        padding: 5px;
+        width: 75px;
+        height: 35px;
+        font-size: 16px;
+        border-radius: 7px;
+        font-weight: bold;
+        background-color: #E83350;
+        color: white;
+        box-shadow:  -2px -2px 4px #ffffff80, 2px 2px 4px  #00000060;
+    }
+    .home:hover{
+        background-color: white;
+        color: black;
+    }
+</style>
+
+<h1>Enter your USN</h1>
+<div class="container">
+<div class="form1">
+<form action="/studentservice" method="POST">
+    <input type="text" name="USN" placeholder="USN"><br><br>
+    <button class="btn">Submit</button>
+    <a class="home" href="/">Back</a>
+</form>
+</div>
+</div>

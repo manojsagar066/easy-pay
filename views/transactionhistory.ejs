@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<h1 style="margin: 19px;">Transactions</h1>
+<h4>Balance: <%=bal %></h4>
+    <% var i=count-1; while(i!=-1) { %>
+<div style="margin: 10px;" class="card bg-light mb-5" style="max-width: 100rem;">
+    <div class="card-header"><p>Date: <%= data[i]["Time"] %><p></div>
+     <div class="card-body">
+     <p>Category: <%= data[i]["Category"] %></p>
+     <!-- <p>Date: <%= data[i]["Time"].toDateString() %><p></p>
+     <p>Time: <%= data[i]["Time"].toTimeString() %><p></p> -->
+     <p>Item Name: <%= data[i]["item_name"] %></p>
+     <p>Quantity: <%= data[i]["quantity"] %><p>
+     <p>Total Cost: <%= data[i]["total_Cost"] %></p>
+     </div>
+ </div>
+ <% --i;}%>
